@@ -3,14 +3,58 @@ h1 {
     color:blue;
 }
 
-div {
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#cercle {
     display:inline-flex;
     border:2px black solid;
     margin-top: 10px;
-    height: 30px;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(red, blue);
+    border-radius: 50%;
 }
 
-#pc {
-    width: 24px;
-    height: 20px;
+#cercle:hover {
+    transform: rotate(9000deg) scale(1.5);
+    transition-duration: 2s;
+    translate: 500%;
+}
+
+#citron {
+    width: 100px;
+    height: 100px;
+    border: 1px rgba(0, 0, 0, 0.333) solid;
+    background: repeating-linear-gradient(rgb(225, 245, 3), rgb(245, 225, 4) );
+    border-radius: 10% 80% 10% 80%;
+}
+
+#citron:hover {
+    transform: rotateY(90deg);
+    transition-duration: 2s;
+}
+
+#triangle {
+    background: linear-gradient(45deg, red , blue );
+    transform: rotate(45deg);
+    margin-top: 25px;
+    width: 100px;
+    height: 100px;
+    margin-left: 150px;
+}
+
+#triangle:hover {
+    translate: -50px;
+    transition-duration: 2s;
+}
+
+#d1 {
+    overflow: hidden;
+    background: transparent;
+    top: -125px;
+    height: 150px;
+    width: 150px;
 }

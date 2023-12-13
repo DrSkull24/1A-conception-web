@@ -2,7 +2,6 @@
 html, body {
 	padding: 0;
 	margin: 0;
-    height: 100%;
 }
 
 #haut_gauche { 
@@ -15,6 +14,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 2;
 }
 
 #haut_droite { 
@@ -30,6 +30,7 @@ html, body {
 }
 
 #bas_gauche { 
+    padding-top: 10px;
     width: 30%;
     height: auto;
     position: absolute;
@@ -47,17 +48,45 @@ html, body {
     top: 30%;
 }
 
-div {
+.titre_img {
     display: inline-flex;
     width: fit-content;
     margin: 0 0 0 15%;
     align-items: center;
 }
 
+#coin {
+    background: rgb(125, 125, 125);
+    position: absolute;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    left: 30%;
+    top: 30%;
+    z-index: 1;
+}
+
+#cache {
+    border-top-left-radius: 50%;
+    background: rgb(250, 250, 250);
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    left: 30%;
+    top: 30%;
+    z-index: 2;
+}
+
 img {
     width: 3.6vw;
     height: 3vw;
     margin-left: 1vw;
+    transition-duration: 2s;
+}
+
+img:hover {
+    transform: rotate(720deg);
+    transition-duration: 2s;
 }
 
 #parler {
@@ -77,6 +106,8 @@ h2 {
 
 h3 {
     font-size: 2.5vw;
+    color: rgb(250, 250, 250);
+    z-index: 2;
 }
 
 p {
@@ -87,4 +118,25 @@ p {
 ul {
     font-size: 2vw;
     margin: 0 0 0 15%;
+}
+
+#cache_nom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 30%;
+    height: 30%;
+    background: rgb(125, 125, 125);
+    transition-duration: 2s;
+    transition-delay: 5s;
+    transition-property: background-color;
+    transition-property: z-index;
+}
+
+#cache_nom:hover {
+    background-color: black;
+    transition-delay: 0s;
+    z-index: 1;
+
 }
