@@ -58,3 +58,11 @@ html, body {
     height: 150px;
     width: 150px;
 }
+
+#test {
+    border: 20px  solid;
+    border-color: white white white red;
+    margin-left: 25px;
+    width: 0;
+    height: 0;
+}
