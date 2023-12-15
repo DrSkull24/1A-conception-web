@@ -128,22 +128,17 @@ ul {
     width: 30%;
     height: 30%;
     background: rgb(125, 125, 125);
-    transition-duration: 2s;
-    transition-delay: 5s;
     transition-property: background-color;
-    transition-property: z-index;
 }
 
 #cache_nom:hover {
-    background-color: black;
-    transition-delay: 0s;
-    z-index: 1;
+    background-color: transparent;
 
 }
 
 .triangle {
     border: 1vw solid;
-    border-color: rgb(125, 125, 125) rgb(125, 125, 125) rgb(125, 125, 125) black;
+    border-color: transparent transparent transparent black;
     width: 0;
     height: 0;
 }
